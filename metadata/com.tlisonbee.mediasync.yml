@@ -23,4 +23,3 @@ Description: |-
   * Movies, shows and games: the phone keeps only the ones you pick for it.
 
   Needs the MediaSync server (github.com/tblisonb/MediaSync), Tailscale, and "All files access".
-CurrentVersionCode: 25

@@ -26,5 +26,3 @@ Description: |-
   * <b>MediaSync, if you use it:</b> Segue rescans right after a sync, uses the loudness the server measures, and streams the server's tracks the phone doesn't keep.
 
   Needs "All files access" to read the Music folder.
-
-CurrentVersionCode: 10
