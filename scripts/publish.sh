@@ -113,7 +113,6 @@ in F-Droid, or add this repo by hand in F-Droid's Settings &gt; Repositories:</p
 EOF
 git -C "$pages" init -q -b gh-pages
 git -C "$pages" add -A
-git -C "$pages" -c user.name="$(git config user.name)" -c user.email="$(git config user.email)" \
-    commit -q -m "F-Droid repo, $(date -u +%Y-%m-%d)"
+git -C "$pages" commit -q -m "F-Droid repo, $(date -u +%Y-%m-%d)"
 git -C "$pages" push -q -f "$pages_url" gh-pages
 echo "Published: $add_url"

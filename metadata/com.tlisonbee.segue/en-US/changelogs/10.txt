@@ -5,5 +5,5 @@ The first release of Segue: your own music files and TIDAL in one queue, with La
 - .m3u8 playlists, shared with desktop players.
 - TIDAL search, favorites and playlists, up to 24-bit FLAC.
 - Last.fm scrobbling and stats.
-- Light, Dark and Black themes, with accent colours.
-- With MediaSync: rescans after a sync, and streams the server's tracks.
+- Light, Dark and Black themes.
+- With MediaSync: rescans after syncs, streams the server's tracks.
