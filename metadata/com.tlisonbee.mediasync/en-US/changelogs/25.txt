@@ -1,0 +1,3 @@
+Needs server 1.3.0 or later. Update the server first.
+
+- Segue moves to its own repository (github.com/tblisonb/Segue)

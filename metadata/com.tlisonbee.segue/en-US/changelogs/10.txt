@@ -1,0 +1,7 @@
+The first release of Segue, a music player for Android: your own music files and TIDAL in one queue, with Last.fm scrobbling, and integration with MediaSync if you use it.
+
+Install segue-1.0.0.apk on the phone (Android 13 or later) and allow All files access when Segue asks. The README covers setting up TIDAL, Last.fm and MediaSync.
+
+What it does
+
+- Your library: browse by artist, album, song, folder and playlist, and search. A rescan reads only what changed, and Segue rescans right after a Medi
