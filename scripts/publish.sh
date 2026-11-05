@@ -60,16 +60,19 @@ for app in "${apps[@]}"; do
     asset=$(jq -r --arg p "$pattern" '[.assets[] | select(.name | test($p))][0].name' <<<"$release")
     if [[ ! -f repo/$asset && ! -f archive/$asset ]]; then
         echo "Adding $asset ($gh_repo $tag)"
-        gh release download "$tag" -R "$gh_repo" -p "$asset" -D repo
+        # Into tmp/ first, so a download that's cut off doesn't leave half an APK in repo/.
+        rm -rf tmp/download && mkdir -p tmp/download
+        gh release download "$tag" -R "$gh_repo" -p "$asset" -D tmp/download
+        mv "tmp/download/$asset" repo/
     fi
     [[ -f repo/$asset ]] || continue
     code=$("$aapt2" dump badging "repo/$asset" | sed -n "s/^package: .* versionCode='\([0-9]*\)'.*/\1/p")
     changelog=metadata/$package/en-US/changelogs/$code.txt
     if [[ ! -f $changelog ]]; then
-        # F-Droid shows plain text, at most 500 characters.
+        # F-Droid shows plain text, at most 500 characters: whole lines, up to that.
         mkdir -p "$(dirname "$changelog")"
         jq -r .body <<<"$release" | sed -E 's/\*\*//g; s/`//g; s/\[([^]]*)\]\([^)]*\)/\1/g; s/^#+ *//' |
-            head -c 500 > "$changelog"
+            awk '{ n += length($0) + 1 } n > 490 { print "…"; exit } { print }' > "$changelog"
     fi
 done
 
