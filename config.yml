@@ -1,0 +1,19 @@
+# fdroidserver's settings for this repo. Public: the signing key and its passwords stay in
+# ~/.android (fdroid-repo.p12 and fdroid-repo.properties), and scripts/publish.sh passes the
+# passwords in the environment.
+repo_url: https://tblisonb.github.io/fdroid/repo
+repo_name: tblisonb's apps
+repo_description: >-
+  Segue, a music player, and MediaSync, version control for your music, photos, videos and games.
+  The same signed APKs as the GitHub releases of github.com/tblisonb/Segue and
+  github.com/tblisonb/MediaSync.
+
+# Only the newest 3 versions of each app are published; older ones move to archive/, which isn't.
+archive_older: 3
+
+sdk_path: /home/tlisonbee/Android/Sdk
+keystore: /home/tlisonbee/.android/fdroid-repo.p12
+repo_keyalias: tblisonb-fdroid
+keydname: CN=tblisonb-fdroid, OU=F-Droid
+keystorepass: {env: FDROID_KEYSTORE_PASS}
+keypass: {env: FDROID_KEY_PASS}

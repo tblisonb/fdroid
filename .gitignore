@@ -1,0 +1,11 @@
+# Built by scripts/publish.sh: repo/ is published to the gh-pages branch, archive/ isn't published.
+/repo/
+/archive/
+/tmp/
+/unsigned/
+/stats/
+/.pages/
+# Never committed, in case a copy ends up here.
+*.p12
+*.jks
+*.properties

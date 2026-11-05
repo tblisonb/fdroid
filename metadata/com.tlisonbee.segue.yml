@@ -1,0 +1,30 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-or-later
+AuthorName: tblisonb
+WebSite: https://github.com/tblisonb/Segue
+SourceCode: https://github.com/tblisonb/Segue
+IssueTracker: https://github.com/tblisonb/Segue/issues
+Changelog: https://github.com/tblisonb/Segue/releases
+
+AntiFeatures:
+  NonFreeNet:
+    en-US: TIDAL and Last.fm, both optional.
+
+Name: Segue
+Summary: Plays your music files and TIDAL in one queue, and scrobbles to Last.fm
+Description: |-
+  A music player for your own music files, and TIDAL, in one queue.
+
+  * <b>Your library:</b> browse by artist, album, song, folder and playlist, and search. A rescan reads only what changed.
+  * <b>Playback:</b> gapless, with FFmpeg's decoders; volume levelling from ReplayGain tags, by track or by album; the media notification, lock screen and Bluetooth controls.
+  * <b>The queue:</b> tapping a track plays its album, playlist, folder or search results from that track. Play next, Add to queue, shuffle and repeat. Segue picks up where you left off.
+  * <b>Playlists:</b> .m3u8 files in Music/Playlists, which desktop players can read too.
+  * <b>TIDAL</b> (needs a subscription): search, your favorites and playlists, playback up to 24-bit FLAC, and editing your playlists and favorites.
+  * <b>Last.fm:</b> scrobbling, including scrobbles made offline, and your stats.
+  * <b>Appearance:</b> Follow system, Light, Dark or Black, with your wallpaper's colours or one of nine accent colours.
+  * <b>MediaSync, if you use it:</b> Segue rescans right after a sync, uses the loudness the server measures, and streams the server's tracks the phone doesn't keep.
+
+  Needs "All files access" to read the Music folder.
+
+CurrentVersionCode: 10

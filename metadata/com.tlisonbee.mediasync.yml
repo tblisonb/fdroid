@@ -1,0 +1,26 @@
+Categories:
+  - Multimedia
+  - Connectivity
+License: GPL-3.0-or-later
+AuthorName: tblisonb
+WebSite: https://github.com/tblisonb/MediaSync
+SourceCode: https://github.com/tblisonb/MediaSync
+IssueTracker: https://github.com/tblisonb/MediaSync/issues
+Changelog: https://github.com/tblisonb/MediaSync/releases
+
+AntiFeatures:
+  NonFreeDep:
+    en-US: Scanning the pairing QR code uses Google Play services. Typing the pairing code works without them.
+
+Name: MediaSync
+Summary: Keeps your phone's music, photos, videos and games in sync with your own server
+Description: |-
+  The Android app of MediaSync, self-hosted version control for your music, photos, videos and games. One PC runs the MediaSync server and holds the library; the phone keeps a copy of the folders you pick, in sync with it, over your own Tailscale network.
+
+  * Every change (a retag, a rename, a deleted file) is a revision you can look at and undo, and nothing changes on the phone until you've seen what's coming.
+  * Music is filed by its tags, the same on every device, and a retag only sends the new tags.
+  * The camera's photos can be backed up to the server, filed by date.
+  * Movies, shows and games: the phone keeps only the ones you pick for it.
+
+  Needs the MediaSync server (github.com/tblisonb/MediaSync), Tailscale, and "All files access".
+CurrentVersionCode: 25
