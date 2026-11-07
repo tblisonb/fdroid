@@ -1,0 +1,5 @@
+Needs server 1.3.0 or later. Update the server first.
+
+- Server 1.6.0, app 1.4.0
+- Moving a filed file by hand waits for review; an episode's move edits it
+- A plain file a device reads as a video or picture becomes one
