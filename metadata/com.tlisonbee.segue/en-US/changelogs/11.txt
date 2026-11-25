@@ -1,0 +1,3 @@
+- Scrollbar on every list, always visible in its own narrow strip: drag it to jump through the list, with the letter you've reached beside it. Lists over 1000 entries show two letters ("Sa", "Se"); Settings > Scrollbar changes that. TIDAL lists in date order show the month added instead.
+- Swipe the cover on Now Playing left for the next track, right for the previous one. A swipe keeps the direction it starts in, so a slanted swipe down still just closes the screen.
+…
